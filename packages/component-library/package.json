@@ -14,7 +14,9 @@
     "coverage": "lego-scripts coverage",
     "lint": "lego-scripts lint index.js src/",
     "flow": "lego-scripts flow",
-    "lint:styles": "lego-scripts lint-styles src/components/"
+    "lint:styles": "lego-scripts lint-styles src/components/",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "babel": {
     "presets": [
@@ -56,7 +58,8 @@
     "react-html5video": "^2.5.1",
     "react-no-ssr": "^1.1.0",
     "react-router-dom": "^4.3.1",
-    "styled-components": "^4.1.2"
+    "styled-components": "^4.1.2",
+    "snyk": "^1.179.0"
   },
   "devDependencies": {
     "@lego-shop/lego-scripts": "*",
@@ -66,5 +69,6 @@
     "react-test-renderer": "^16.4.0",
     "rsg-components": "^3.0.0",
     "webpack": "^4.12.0"
-  }
+  },
+  "snyk": true
 }
