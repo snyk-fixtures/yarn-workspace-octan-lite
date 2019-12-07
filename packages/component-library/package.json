@@ -62,7 +62,7 @@
     "@lego-shop/lego-scripts": "*",
     "enzyme": "^3.8.0",
     "jest-styled-components": "^6.3.1",
-    "react-styleguidist": "^8.0.2",
+    "react-styleguidist": "^10.0.0",
     "react-test-renderer": "^16.4.0",
     "rsg-components": "^3.0.0",
     "webpack": "^4.12.0"
