@@ -43,7 +43,7 @@
     "graphql": "^14.1.1",
     "graphql-tag": "^2.9.2",
     "idx": "^2.4.0",
-    "lodash": "4.17.11",
+    "lodash": "4.17.16",
     "normalize.css": "8.0.1",
     "polished": "^2.3.3",
     "prop-types": "^15.6.2",
