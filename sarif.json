@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Snyk Open Source",
+          "rules": [
+            {
+              "id": "SNYK-JS-NODEFETCH-674311",
+              "shortDescription": {
+                "text": "Medium severity - Denial of Service vulnerability in node-fetch"
+              },
+              "fullDescription": {
+                "text": "(CVE-2020-15168) node-fetch@2.3.0"
+              },
+              "help": {
+                "text": "",
+                "markdown": "* Package Manager: yarn\n* Vulnerable module: node-fetch\n* Introduced through: package.json@* and node-fetch@2.3.0\n### Detailed paths\n* _Introduced through_: package.json@* › node-fetch@2.3.0\n# Overview\n[node-fetch](https://www.npmjs.com/package/node-fetch) is an A light-weight module that brings window.fetch to node.js\n\nAffected versions of this package are vulnerable to Denial of Service. Node Fetch did not honor the `size` option after following a redirect, which means that when a content size was over the limit, a FetchError would never get thrown and the process would end without failure.\n# Remediation\nUpgrade `node-fetch` to version 2.6.1, 3.0.0-beta.9 or higher.\n# References\n- [GitHub Advisory](https://github.com/node-fetch/node-fetch/security/advisories/GHSA-w7rc-rwvf-8q5r)\n"
+              },
+              "properties": {
+                "tags": [
+                  "security",
+                  "CWE-400",
+                  "yarn"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "SNYK-JS-NODEFETCH-674311",
+          "level": "warning",
+          "message": {
+            "text": "This file introduces a vulnerable node-fetch package with a medium severity vulnerability."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "package.json"
+                },
+                "region": {
+                  "startLine": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
