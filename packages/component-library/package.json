@@ -45,7 +45,7 @@
     "idx": "^2.4.0",
     "lodash": "4.17.11",
     "normalize.css": "8.0.1",
-    "polished": "^2.3.3",
+    "polished": "^3.7.2",
     "prop-types": "^15.6.2",
     "qs": "^6.5.2",
     "react": "^16.8.3",
