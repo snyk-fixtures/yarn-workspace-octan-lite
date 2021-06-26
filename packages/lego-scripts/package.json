@@ -107,7 +107,7 @@
     "mkdirp": "^0.5.1",
     "node-glob": "^1.2.0",
     "node-sass": "4.11.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "optimize-css-assets-webpack-plugin": "^6.0.0",
     "path-type": "^3.0.0",
     "postcss-loader": "^3.0.0",
     "postcss-scss": "^2.0.0",
